@@ -5,6 +5,9 @@ bins
 gens
 libs
 objs
+cmake/
+bin/
+bin-int/
 
 # Python items
 .coverage*

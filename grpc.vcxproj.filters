@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{8461ABF6-7003-D6CC-59BE-E92045FF5C1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{AEFEE3F6-9AA0-0ECD-835B-22216F9C951D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext">
+      <UniqueIdentifier>{7670880B-E279-887C-6BF5-9E7CD7FD937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\csm">
+      <UniqueIdentifier>{A835B382-1415-321E-1D2D-BDF4898B987F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\filters">
+      <UniqueIdentifier>{DE29F03E-4ADF-6834-D3D3-620B3F885F38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\filters\census">
+      <UniqueIdentifier>{1E77608D-0A5B-21E3-73BB-1B365FBE0B65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\gcp">
+      <UniqueIdentifier>{9F44B382-0B24-321E-143C-BDF4809A987F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\otel">
+      <UniqueIdentifier>{D98220D9-C54F-7BE4-EE68-698CDA94B072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{9C76841B-8818-AFF1-71D3-C2455D143642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\admin">
+      <UniqueIdentifier>{946DB863-80D0-4708-2956-80BE1598138B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\channelz">
+      <UniqueIdentifier>{DE609995-4AEC-065A-53FD-894EBF07635A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\csds">
+      <UniqueIdentifier>{D8B72D9E-446D-A693-CD61-A06A39169D97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\health">
+      <UniqueIdentifier>{61CE25EB-CD8E-A121-96C9-EA9E0249E6FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\load_reporter">
+      <UniqueIdentifier>{5DE2DEEC-4971-68B6-F28F-7CB1DEFD785C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\orca">
+      <UniqueIdentifier>{F047349E-5CFD-AC93-E5F1-A66A51A6A397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread_manager">
+      <UniqueIdentifier>{57EBE7F3-43B9-DBF9-2C4D-4C2018BAB75E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{43339F7C-2F6A-A00D-D856-8610C46C1C0F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cpp\client\client_stats_interceptor.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\client\create_channel_internal.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\client\secure_credentials.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\common\secure_auth_context.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\chaotic_good.h">
+      <Filter>ext</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\csm\csm_observability.h">
+      <Filter>ext\csm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\csm\metadata_exchange.h">
+      <Filter>ext\csm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\filters\census\client_filter.h">
+      <Filter>ext\filters\census</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\filters\census\context.h">
+      <Filter>ext\filters\census</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\filters\census\grpc_plugin.h">
+      <Filter>ext\filters\census</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\filters\census\measures.h">
+      <Filter>ext\filters\census</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\filters\census\open_census_call_tracer.h">
+      <Filter>ext\filters\census</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\filters\census\rpc_encoding.h">
+      <Filter>ext\filters\census</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\filters\census\server_call_tracer.h">
+      <Filter>ext\filters\census</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\gcp\environment_autodetect.h">
+      <Filter>ext\gcp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\gcp\observability_config.h">
+      <Filter>ext\gcp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\gcp\observability_logging_sink.h">
+      <Filter>ext\gcp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\otel\key_value_iterable.h">
+      <Filter>ext\otel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\otel\otel_client_call_tracer.h">
+      <Filter>ext\otel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\otel\otel_plugin.h">
+      <Filter>ext\otel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\otel\otel_server_call_tracer.h">
+      <Filter>ext\otel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\ext\proto_server_reflection.h">
+      <Filter>ext</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\backend_metric_recorder.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\channelz\channelz_service.h">
+      <Filter>server\channelz</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\csds\csds.h">
+      <Filter>server\csds</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\dynamic_thread_pool.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\external_connection_acceptor_impl.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\health\default_health_check_service.h">
+      <Filter>server\health</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\load_reporter\constants.h">
+      <Filter>server\load_reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\load_reporter\get_cpu_stats.h">
+      <Filter>server\load_reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\load_reporter\load_data_store.h">
+      <Filter>server\load_reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\load_reporter\load_reporter.h">
+      <Filter>server\load_reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\load_reporter\load_reporter_async_service_impl.h">
+      <Filter>server\load_reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\load_reporter\load_reporting_service_server_builder_plugin.h">
+      <Filter>server\load_reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\orca\orca_service.h">
+      <Filter>server\orca</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\secure_server_credentials.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\server\thread_pool_interface.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\thread_manager\thread_manager.h">
+      <Filter>thread_manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cpp\client\call_credentials.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\channel_cc.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\channel_credentials.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\channel_test_peer.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\client_callback.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\client_context.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\client_interceptor.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\client_stats_interceptor.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\create_channel.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\create_channel_internal.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\create_channel_posix.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\global_callback_hook.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\insecure_credentials.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\secure_credentials.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\client\xds_credentials.cc">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\alarm.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\alts_context.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\alts_util.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\auth_property_iterator.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\channel_arguments.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\completion_queue_cc.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\insecure_create_auth_context.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\resource_quota_cc.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\rpc_method.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\secure_auth_context.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\secure_create_auth_context.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\tls_certificate_provider.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\tls_certificate_verifier.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\tls_credentials_options.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\validate_service_config.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\common\version_cc.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\chaotic_good.cc">
+      <Filter>ext</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\csm\csm_observability.cc">
+      <Filter>ext\csm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\csm\metadata_exchange.cc">
+      <Filter>ext\csm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\filters\census\client_filter.cc">
+      <Filter>ext\filters\census</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\filters\census\context.cc">
+      <Filter>ext\filters\census</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\filters\census\grpc_plugin.cc">
+      <Filter>ext\filters\census</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\filters\census\measures.cc">
+      <Filter>ext\filters\census</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\filters\census\rpc_encoding.cc">
+      <Filter>ext\filters\census</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\filters\census\server_call_tracer.cc">
+      <Filter>ext\filters\census</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\filters\census\views.cc">
+      <Filter>ext\filters\census</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\gcp\environment_autodetect.cc">
+      <Filter>ext\gcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\gcp\observability.cc">
+      <Filter>ext\gcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\gcp\observability_config.cc">
+      <Filter>ext\gcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\gcp\observability_logging_sink.cc">
+      <Filter>ext\gcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\otel\otel_client_call_tracer.cc">
+      <Filter>ext\otel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\otel\otel_plugin.cc">
+      <Filter>ext\otel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\otel\otel_server_call_tracer.cc">
+      <Filter>ext\otel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\proto_server_reflection.cc">
+      <Filter>ext</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ext\proto_server_reflection_plugin.cc">
+      <Filter>ext</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\admin\admin_services.cc">
+      <Filter>server\admin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\async_generic_service.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\authorization_policy_provider.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\backend_metric_recorder.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\channel_argument_option.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\channelz\channelz_service.cc">
+      <Filter>server\channelz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\channelz\channelz_service_plugin.cc">
+      <Filter>server\channelz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\create_default_thread_pool.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\csds\csds.cc">
+      <Filter>server\csds</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\external_connection_acceptor_impl.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\health\default_health_check_service.cc">
+      <Filter>server\health</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\health\health_check_service.cc">
+      <Filter>server\health</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\health\health_check_service_server_builder_option.cc">
+      <Filter>server\health</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\insecure_server_credentials.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\get_cpu_stats_linux.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\get_cpu_stats_macos.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\get_cpu_stats_unsupported.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\get_cpu_stats_windows.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\load_data_store.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\load_reporter.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\load_reporter_async_service_impl.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\load_reporting_service_server_builder_option.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\load_reporting_service_server_builder_plugin.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\load_reporter\util.cc">
+      <Filter>server\load_reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\orca\orca_service.cc">
+      <Filter>server\orca</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\secure_server_credentials.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\server_builder.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\server_callback.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\server_cc.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\server_context.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\server_credentials.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\server_posix.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\xds_server_builder.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\server\xds_server_credentials.cc">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\thread_manager\thread_manager.cc">
+      <Filter>thread_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\util\byte_buffer_cc.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\util\error_details.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\util\status.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\util\string_ref.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\util\time_cc.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

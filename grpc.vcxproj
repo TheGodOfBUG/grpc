@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{517E977C-3DB5-980D-E6A1-7E10D2B7140F}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>grpc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\Debug-windows-x86_64\grpc\</OutDir>
+    <IntDir>bin-int\Debug-windows-x86_64\grpc\</IntDir>
+    <TargetName>grpc</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\Release-windows-x86_64\grpc\</OutDir>
+    <IntDir>bin-int\Release-windows-x86_64\grpc\</IntDir>
+    <TargetName>grpc</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <OutDir>bin\Dist-windows-x86_64\grpc\</OutDir>
+    <IntDir>bin-int\Dist-windows-x86_64\grpc\</IntDir>
+    <TargetName>grpc</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>.;include;src\core\ext\upb-gen;third_party\abseil-cpp;third_party\protobuf\src;third_party\boringssl-with-bazel\src\include;third_party\upb;third_party\re2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>.;include;src\core\ext\upb-gen;third_party\abseil-cpp;third_party\protobuf\src;third_party\boringssl-with-bazel\src\include;third_party\upb;third_party\re2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>.;include;src\core\ext\upb-gen;third_party\abseil-cpp;third_party\protobuf\src;third_party\boringssl-with-bazel\src\include;third_party\upb;third_party\re2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cpp\client\client_stats_interceptor.h" />
+    <ClInclude Include="src\cpp\client\create_channel_internal.h" />
+    <ClInclude Include="src\cpp\client\secure_credentials.h" />
+    <ClInclude Include="src\cpp\common\secure_auth_context.h" />
+    <ClInclude Include="src\cpp\ext\chaotic_good.h" />
+    <ClInclude Include="src\cpp\ext\csm\csm_observability.h" />
+    <ClInclude Include="src\cpp\ext\csm\metadata_exchange.h" />
+    <ClInclude Include="src\cpp\ext\filters\census\client_filter.h" />
+    <ClInclude Include="src\cpp\ext\filters\census\context.h" />
+    <ClInclude Include="src\cpp\ext\filters\census\grpc_plugin.h" />
+    <ClInclude Include="src\cpp\ext\filters\census\measures.h" />
+    <ClInclude Include="src\cpp\ext\filters\census\open_census_call_tracer.h" />
+    <ClInclude Include="src\cpp\ext\filters\census\rpc_encoding.h" />
+    <ClInclude Include="src\cpp\ext\filters\census\server_call_tracer.h" />
+    <ClInclude Include="src\cpp\ext\gcp\environment_autodetect.h" />
+    <ClInclude Include="src\cpp\ext\gcp\observability_config.h" />
+    <ClInclude Include="src\cpp\ext\gcp\observability_logging_sink.h" />
+    <ClInclude Include="src\cpp\ext\otel\key_value_iterable.h" />
+    <ClInclude Include="src\cpp\ext\otel\otel_client_call_tracer.h" />
+    <ClInclude Include="src\cpp\ext\otel\otel_plugin.h" />
+    <ClInclude Include="src\cpp\ext\otel\otel_server_call_tracer.h" />
+    <ClInclude Include="src\cpp\ext\proto_server_reflection.h" />
+    <ClInclude Include="src\cpp\server\backend_metric_recorder.h" />
+    <ClInclude Include="src\cpp\server\channelz\channelz_service.h" />
+    <ClInclude Include="src\cpp\server\csds\csds.h" />
+    <ClInclude Include="src\cpp\server\dynamic_thread_pool.h" />
+    <ClInclude Include="src\cpp\server\external_connection_acceptor_impl.h" />
+    <ClInclude Include="src\cpp\server\health\default_health_check_service.h" />
+    <ClInclude Include="src\cpp\server\load_reporter\constants.h" />
+    <ClInclude Include="src\cpp\server\load_reporter\get_cpu_stats.h" />
+    <ClInclude Include="src\cpp\server\load_reporter\load_data_store.h" />
+    <ClInclude Include="src\cpp\server\load_reporter\load_reporter.h" />
+    <ClInclude Include="src\cpp\server\load_reporter\load_reporter_async_service_impl.h" />
+    <ClInclude Include="src\cpp\server\load_reporter\load_reporting_service_server_builder_plugin.h" />
+    <ClInclude Include="src\cpp\server\orca\orca_service.h" />
+    <ClInclude Include="src\cpp\server\secure_server_credentials.h" />
+    <ClInclude Include="src\cpp\server\thread_pool_interface.h" />
+    <ClInclude Include="src\cpp\thread_manager\thread_manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cpp\client\call_credentials.cc" />
+    <ClCompile Include="src\cpp\client\channel_cc.cc" />
+    <ClCompile Include="src\cpp\client\channel_credentials.cc" />
+    <ClCompile Include="src\cpp\client\channel_test_peer.cc" />
+    <ClCompile Include="src\cpp\client\client_callback.cc" />
+    <ClCompile Include="src\cpp\client\client_context.cc" />
+    <ClCompile Include="src\cpp\client\client_interceptor.cc" />
+    <ClCompile Include="src\cpp\client\client_stats_interceptor.cc" />
+    <ClCompile Include="src\cpp\client\create_channel.cc" />
+    <ClCompile Include="src\cpp\client\create_channel_internal.cc" />
+    <ClCompile Include="src\cpp\client\create_channel_posix.cc" />
+    <ClCompile Include="src\cpp\client\global_callback_hook.cc" />
+    <ClCompile Include="src\cpp\client\insecure_credentials.cc" />
+    <ClCompile Include="src\cpp\client\secure_credentials.cc" />
+    <ClCompile Include="src\cpp\client\xds_credentials.cc" />
+    <ClCompile Include="src\cpp\common\alarm.cc" />
+    <ClCompile Include="src\cpp\common\alts_context.cc" />
+    <ClCompile Include="src\cpp\common\alts_util.cc" />
+    <ClCompile Include="src\cpp\common\auth_property_iterator.cc" />
+    <ClCompile Include="src\cpp\common\channel_arguments.cc" />
+    <ClCompile Include="src\cpp\common\completion_queue_cc.cc" />
+    <ClCompile Include="src\cpp\common\insecure_create_auth_context.cc" />
+    <ClCompile Include="src\cpp\common\resource_quota_cc.cc" />
+    <ClCompile Include="src\cpp\common\rpc_method.cc" />
+    <ClCompile Include="src\cpp\common\secure_auth_context.cc" />
+    <ClCompile Include="src\cpp\common\secure_create_auth_context.cc" />
+    <ClCompile Include="src\cpp\common\tls_certificate_provider.cc" />
+    <ClCompile Include="src\cpp\common\tls_certificate_verifier.cc" />
+    <ClCompile Include="src\cpp\common\tls_credentials_options.cc" />
+    <ClCompile Include="src\cpp\common\validate_service_config.cc" />
+    <ClCompile Include="src\cpp\common\version_cc.cc" />
+    <ClCompile Include="src\cpp\ext\chaotic_good.cc" />
+    <ClCompile Include="src\cpp\ext\csm\csm_observability.cc" />
+    <ClCompile Include="src\cpp\ext\csm\metadata_exchange.cc" />
+    <ClCompile Include="src\cpp\ext\filters\census\client_filter.cc" />
+    <ClCompile Include="src\cpp\ext\filters\census\context.cc" />
+    <ClCompile Include="src\cpp\ext\filters\census\grpc_plugin.cc" />
+    <ClCompile Include="src\cpp\ext\filters\census\measures.cc" />
+    <ClCompile Include="src\cpp\ext\filters\census\rpc_encoding.cc" />
+    <ClCompile Include="src\cpp\ext\filters\census\server_call_tracer.cc" />
+    <ClCompile Include="src\cpp\ext\filters\census\views.cc" />
+    <ClCompile Include="src\cpp\ext\gcp\environment_autodetect.cc" />
+    <ClCompile Include="src\cpp\ext\gcp\observability.cc" />
+    <ClCompile Include="src\cpp\ext\gcp\observability_config.cc" />
+    <ClCompile Include="src\cpp\ext\gcp\observability_logging_sink.cc" />
+    <ClCompile Include="src\cpp\ext\otel\otel_client_call_tracer.cc" />
+    <ClCompile Include="src\cpp\ext\otel\otel_plugin.cc" />
+    <ClCompile Include="src\cpp\ext\otel\otel_server_call_tracer.cc" />
+    <ClCompile Include="src\cpp\ext\proto_server_reflection.cc" />
+    <ClCompile Include="src\cpp\ext\proto_server_reflection_plugin.cc" />
+    <ClCompile Include="src\cpp\server\admin\admin_services.cc" />
+    <ClCompile Include="src\cpp\server\async_generic_service.cc" />
+    <ClCompile Include="src\cpp\server\authorization_policy_provider.cc" />
+    <ClCompile Include="src\cpp\server\backend_metric_recorder.cc" />
+    <ClCompile Include="src\cpp\server\channel_argument_option.cc" />
+    <ClCompile Include="src\cpp\server\channelz\channelz_service.cc" />
+    <ClCompile Include="src\cpp\server\channelz\channelz_service_plugin.cc" />
+    <ClCompile Include="src\cpp\server\create_default_thread_pool.cc" />
+    <ClCompile Include="src\cpp\server\csds\csds.cc" />
+    <ClCompile Include="src\cpp\server\external_connection_acceptor_impl.cc" />
+    <ClCompile Include="src\cpp\server\health\default_health_check_service.cc" />
+    <ClCompile Include="src\cpp\server\health\health_check_service.cc" />
+    <ClCompile Include="src\cpp\server\health\health_check_service_server_builder_option.cc" />
+    <ClCompile Include="src\cpp\server\insecure_server_credentials.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\get_cpu_stats_linux.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\get_cpu_stats_macos.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\get_cpu_stats_unsupported.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\get_cpu_stats_windows.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\load_data_store.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\load_reporter.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\load_reporter_async_service_impl.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\load_reporting_service_server_builder_option.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\load_reporting_service_server_builder_plugin.cc" />
+    <ClCompile Include="src\cpp\server\load_reporter\util.cc" />
+    <ClCompile Include="src\cpp\server\orca\orca_service.cc" />
+    <ClCompile Include="src\cpp\server\secure_server_credentials.cc" />
+    <ClCompile Include="src\cpp\server\server_builder.cc" />
+    <ClCompile Include="src\cpp\server\server_callback.cc" />
+    <ClCompile Include="src\cpp\server\server_cc.cc" />
+    <ClCompile Include="src\cpp\server\server_context.cc" />
+    <ClCompile Include="src\cpp\server\server_credentials.cc" />
+    <ClCompile Include="src\cpp\server\server_posix.cc" />
+    <ClCompile Include="src\cpp\server\xds_server_builder.cc" />
+    <ClCompile Include="src\cpp\server\xds_server_credentials.cc" />
+    <ClCompile Include="src\cpp\thread_manager\thread_manager.cc" />
+    <ClCompile Include="src\cpp\util\byte_buffer_cc.cc" />
+    <ClCompile Include="src\cpp\util\error_details.cc" />
+    <ClCompile Include="src\cpp\util\status.cc" />
+    <ClCompile Include="src\cpp\util\string_ref.cc" />
+    <ClCompile Include="src\cpp\util\time_cc.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
